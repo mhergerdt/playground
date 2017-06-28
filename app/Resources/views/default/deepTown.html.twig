@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div>
+        <h1>Required items for {{ quantity }} x {{ item.name }}</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for itemWithQuantity in requiredItems %}
+                <tr>
+                    <td>{{ itemWithQuantity.item.name }}</td>
+                    <td style="text-align: right;">{{ itemWithQuantity.quantity|number_format }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpDockerContainerSettings">
+    <list>
+      <map>
+        <entry key="0906ff45-81e6-4529-8a65-ecbb00be6eb7">
+          <value>
+            <DockerContainerSettings>
+              <option name="envVars">
+                <list>
+                  <DockerEnvVarImpl>
+                    <option name="name" value="APP_ENV" />
+                    <option name="value" value="dev" />
+                  </DockerEnvVarImpl>
+                </list>
+              </option>
+              <option name="version" value="1" />
+              <option name="volumeBindings">
+                <list>
+                  <DockerVolumeBindingImpl>
+                    <option name="containerPath" value="/var/www/project" />
+                    <option name="hostPath" value="$PROJECT_DIR$" />
+                  </DockerVolumeBindingImpl>
+                </list>
+              </option>
+            </DockerContainerSettings>
+          </value>
+        </entry>
+      </map>
+    </list>
+  </component>
+</project>
