@@ -24,8 +24,9 @@ class CartItem
 
     /**
      * CartItem constructor.
+     *
      * @param IBuyable $product
-     * @param int $amount
+     * @param int      $amount
      */
     public function __construct(IBuyable $product, int $amount)
     {

@@ -44,11 +44,13 @@ class Product implements IBuyable
 
     /**
      * @param string $id
+     *
      * @return Product
      */
     public function setId(string $id): Product
     {
         $this->id = $id;
+
         return $this;
     }
 
@@ -62,11 +64,13 @@ class Product implements IBuyable
 
     /**
      * @param string $title
+     *
      * @return Product
      */
     public function setTitle(string $title): Product
     {
         $this->title = $title;
+
         return $this;
     }
 
@@ -80,11 +84,13 @@ class Product implements IBuyable
 
     /**
      * @param string $description
+     *
      * @return Product
      */
     public function setDescription(string $description): Product
     {
         $this->description = $description;
+
         return $this;
     }
 
@@ -98,11 +104,13 @@ class Product implements IBuyable
 
     /**
      * @param Money $price
+     *
      * @return Product
      */
     public function setPrice(Money $price): Product
     {
         $this->price = $price;
+
         return $this;
     }
 }

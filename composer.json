@@ -1,7 +1,8 @@
 {
-    "name": "www-data/testing",
+    "name": "mhergerdt/playground",
     "license": "proprietary",
     "type": "project",
+    "description": "Playground to try new concepts, test things and so on.",
     "autoload": {
         "psr-4": {
             "": "src/"

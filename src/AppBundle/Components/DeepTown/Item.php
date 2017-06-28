@@ -23,7 +23,8 @@ class Item
 
     /**
      * Item constructor.
-     * @param string $name
+     *
+     * @param string             $name
      * @param ItemWithQuantity[] $components
      */
     public function __construct(string $name, array $components = [])
@@ -42,11 +43,13 @@ class Item
 
     /**
      * @param string $name
+     *
      * @return Item
      */
     public function setName(string $name): Item
     {
         $this->name = $name;
+
         return $this;
     }
 
@@ -60,11 +63,13 @@ class Item
 
     /**
      * @param ItemWithQuantity[] $components
+     *
      * @return Item
      */
     public function setComponents(array $components): Item
     {
         $this->components = $components;
+
         return $this;
     }
 }

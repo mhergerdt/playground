@@ -13,7 +13,8 @@ class RequiredItemsCalculator
 {
     /**
      * @param Item $item
-     * @param int $quantity
+     * @param int  $quantity
+     *
      * @return ItemWithQuantity[]
      */
     public function calculate(Item $item, int $quantity = 1): array
@@ -32,8 +33,8 @@ class RequiredItemsCalculator
 
     /**
      * @param ItemWithQuantity[] $requiredItems
-     * @param Item $item
-     * @param int $quantity
+     * @param Item               $item
+     * @param int                $quantity
      */
     private function addRequiredItem(array &$requiredItems, Item $item, int $quantity)
     {

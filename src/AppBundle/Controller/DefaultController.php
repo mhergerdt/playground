@@ -40,7 +40,7 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-            'cart' => $cart
+            'cart'     => $cart
         ]);
     }
 
@@ -88,8 +88,8 @@ class DefaultController extends Controller
         $requiredItems = $calculator->calculate($item, $quantity);
 
         return $this->render('default/deepTown.html.twig', [
-            'item' => $item,
-            'quantity' => $quantity,
+            'item'          => $item,
+            'quantity'      => $quantity,
             'requiredItems' => $requiredItems
         ]);
     }
