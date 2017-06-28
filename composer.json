@@ -5,7 +5,7 @@
     "description": "Playground to try new concepts, test things and so on.",
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "AppBundle\\": "src/AppBundle"
         },
         "classmap": [
             "app/AppKernel.php",
